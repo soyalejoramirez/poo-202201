@@ -5,7 +5,7 @@ import com.dispensador.dominio.DispensadorDeCerveza;
 
 public class AppDispensador {
     public static void main(String[] args0) {
-        Cerveza cerveza = new Cerveza("Pilsen", 4.3);
+        Cerveza cerveza = new Cerveza("Budweiser", 4.3);
 
         DispensadorDeCerveza dispensador = new DispensadorDeCerveza("XXSS", 3);
         dispensador.cerveza = cerveza;
