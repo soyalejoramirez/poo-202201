@@ -9,9 +9,3 @@ S
 #src/main/java/com/tv/app/AppTV.java,f\b\fb3bfe018f507e3f3c841ada7defba9916df3419
 [
 +src/main/java/com/tv/dominio/Televisor.java,6\9\694cadc94d1c118faadb58fc717c56d842592531
-Y
-)src/main/java/com/banco/app/AppBanco.java,f\2\f25c88d240bf3b8e9f3ec7ef6ba0440289e6cd04
-c
-3src/main/java/com/banco/dominio/CuentaBancaria.java,7\2\72689dbbd4c98f39df01c480dabe3fcae86768cc
-\
-,src/main/java/com/banco/dominio/Persona.java,2\9\297608dc2f6927a657a216480ae6917010eb0f3c

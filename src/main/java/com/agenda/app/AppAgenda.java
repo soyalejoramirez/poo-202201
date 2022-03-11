@@ -16,13 +16,13 @@ public class AppAgenda {
         Contacto c = agenda.buscarConFilter(3104698710l);
 
         if (c != null) {
-            System.out.println("Contacto buscado: " + c.nombre);
+            System.out.println("Contacto buscado: " + c.getNombre());
         } else {
             System.out.println("Contacto no encontrado");
         }
 
-        Contacto contactoExistente = new Contacto("Alfredo", "Berrio", 3104698710l);
-        agenda.editar(contactoExistente);
+        c.setCelular(3110008796l);
+        agenda.editar(c);
 
         agenda.imprimirAgenda();
     }

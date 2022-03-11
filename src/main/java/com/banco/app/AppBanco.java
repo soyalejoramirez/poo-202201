@@ -1,6 +1,7 @@
 package com.banco.app;
 
 import com.banco.dominio.CuentaBancaria;
+import com.banco.dominio.Persona;
 
 public class AppBanco {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class AppBanco {
         miCuenta.activar();
         miCuenta.consignar(100000);
         miCuenta.retirar(98000);
-        //miCuenta.transferir(50000, tuCuenta);
+
         System.out.println("MI CUENTA: " + miCuenta.obtenerSaldoActual());
         System.out.println("TU CUENTA: " + tuCuenta.obtenerSaldoActual());
     }

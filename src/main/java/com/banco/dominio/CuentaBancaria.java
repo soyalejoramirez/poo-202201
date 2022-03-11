@@ -1,13 +1,13 @@
 package com.banco.dominio;
 
 public class CuentaBancaria {
-    public long numero;
-    public String tipo;
-    public long saldo;
-    public long tope;
-    public short clave;
-    public Persona propietario;
-    public boolean activa;
+    private long numero;
+    private String tipo;
+    private long saldo;
+    private long tope;
+    private short clave;
+    private Persona propietario;
+    private boolean activa;
 
     public void activar() {
         this.activa = true;
@@ -57,5 +57,41 @@ public class CuentaBancaria {
 
     public String obtenerSaldoActual() {
         return "Tienes " + this.saldo + " pesos.";
+    }
+
+    public long getNumero() {
+        return numero;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public long getSaldo() {
+        return saldo;
+    }
+
+    public long getTope() {
+        return tope;
+    }
+
+    public short getClave() {
+        return clave;
+    }
+
+    public Persona getPropietario() {
+        return propietario;
+    }
+
+    public boolean isActiva() {
+        return activa;
+    }
+
+    public void setTope(long tope) {
+        this.tope = tope;
+    }
+
+    public void setClave(short clave) {
+        this.clave = clave;
     }
 }

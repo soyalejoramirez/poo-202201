@@ -3,10 +3,9 @@ package com.agenda.dominio;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
 
 public class Agenda {
-    public List<Contacto> contactos;
+    private List<Contacto> contactos;
 
     public Agenda() {
         this.contactos = new ArrayList<>();
@@ -21,14 +20,14 @@ public class Agenda {
         boolean eliminoCorrectamente = this.contactos.remove(contactoAEliminar);
 
         if (eliminoCorrectamente) {
-            System.out.println("Se eliminó el contacto " + contactoAEliminar.nombre);
+            System.out.println("Se eliminó el contacto " + contactoAEliminar.getNombre());
         } else {
-            System.out.println("No se eliminó nada. Porque el contacto " + contactoAEliminar.nombre + " no existe.");
+            System.out.println("No se eliminó nada. Porque el contacto " + contactoAEliminar.getNombre() + " no existe.");
         }
     }
 
     public void editar(Contacto contactoAEditar) {
-        Contacto c = buscarConFilter(contactoAEditar.celular);
+        Contacto c = buscarConFilter(contactoAEditar.getCelular());
 
         if(c != null) {
             int posicionAReemplazar = this.contactos.indexOf(c);
@@ -40,7 +39,7 @@ public class Agenda {
 
     public Contacto buscarConFilter(long celular) {
         Contacto contactoBuscado = this.contactos.stream()
-                                    .filter(contacto -> contacto.celular == celular)
+                                    .filter(contacto -> contacto.getCelular() == celular)
                                     .findFirst().orElse(null);
         return contactoBuscado;
     }
@@ -49,7 +48,7 @@ public class Agenda {
         AtomicReference<Contacto> contactoBuscado = new AtomicReference<>();
 
         this.contactos.forEach(contacto -> {
-            if (contacto.celular == celular) {
+            if (contacto.getCelular() == celular) {
                 contactoBuscado.set(contacto);
             }
         });
@@ -57,9 +56,13 @@ public class Agenda {
     }
 
     public void imprimirAgenda() {
-        this.contactos.forEach(c -> System.out.println(c.nombre + " - " + c.celular));
+        this.contactos.forEach(c -> System.out.println(c.getNombre() + " - " + c.getCelular()));
     }
 
     public void imprimirAgendaOrdenada() {
+    }
+
+    public List<Contacto> getContactos() {
+        return contactos;
     }
 }
