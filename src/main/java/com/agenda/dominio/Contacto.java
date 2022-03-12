@@ -5,7 +5,7 @@ public class Contacto {
     private String apellido;
     private long celular;
 
-    protected Contacto(String nombre, String apellido, long celular) {
+    public Contacto(String nombre, String apellido, long celular) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.celular = celular;

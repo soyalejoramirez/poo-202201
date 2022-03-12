@@ -6,6 +6,7 @@ import com.agenda.dominio.Contacto;
 public class AppAgenda {
     public static void main(String[] args) {
         Agenda agenda = new Agenda();
+        //     Stack-------Heap
 
         agenda.agregar("Georgina", "Ronaldo", 3113776458l);
         agenda.agregar("Ana", "Bedoya", 3219000174l);
