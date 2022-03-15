@@ -10,11 +10,12 @@ public class AppAgenda {
 
         agenda.agregar("Georgina", "Ronaldo", 3113776458l);
         agenda.agregar("Ana", "Bedoya", 3219000174l);
+        agenda.agregar("Berenice", "Zuluaga", 3219316174l);
         agenda.agregar("Carlos", "Mattos", 3002587496l);
+        agenda.agregar("Carlos", "Maderos", 3022587496l);
         agenda.agregar("Alejandro", "Ramirez", 3104698710l);
 
-        agenda.imprimirAgenda();
-        Contacto c = agenda.buscarConFilter(3104698710l);
+        Contacto c = agenda.buscarPorCelularConFilter(3104698710l);
 
         if (c != null) {
             System.out.println("Contacto buscado: " + c.getNombre());
@@ -22,9 +23,9 @@ public class AppAgenda {
             System.out.println("Contacto no encontrado");
         }
 
-        c.setCelular(3110008796l);
-        agenda.editar(c);
+        agenda.editar(3104698710l, 3110008796l);
 
-        agenda.imprimirAgenda();
+        System.out.println("----- CONTACTOS ORDENADOS ----- ");
+        agenda.ordenarAlfabeticamente();
     }
 }
