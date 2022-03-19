@@ -1,4 +1,4 @@
-package com.agenda.app;
+package com.listas.app;
 
 import java.util.ArrayList;
 import java.util.List;

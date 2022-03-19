@@ -1,6 +1,6 @@
 package com.memoria.app;
 
-import com.agenda.dominio.Contacto;
+import com.taller.punto1.dominio.Contacto;
 
 public class AppMemoria {
     public static void main(String[] args) {
