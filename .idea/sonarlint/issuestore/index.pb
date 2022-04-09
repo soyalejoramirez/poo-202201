@@ -15,3 +15,9 @@ c
 3src/main/java/com/banco/dominio/CuentaBancaria.java,7\2\72689dbbd4c98f39df01c480dabe3fcae86768cc
 \
 ,src/main/java/com/banco/dominio/Persona.java,2\9\297608dc2f6927a657a216480ae6917010eb0f3c
+_
+/src/main/java/com/taller/punto1/app/AppEPS.java,1\6\16a9f7d7ae55a70c7d70e1696688d4c165324b22
+_
+/src/main/java/com/parcial/dominio/Paciente.java,f\4\f4867b54b7b0f522a4f7030e29e4968ab30aecb8
+a
+1src/main/java/com/parcial/dominio/Enfermedad.java,1\d\1d8bbae18d77cdb27fac60404cfb55c614a7061e
