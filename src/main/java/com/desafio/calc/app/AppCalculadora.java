@@ -58,11 +58,11 @@ public class AppCalculadora {
 
             switch (opcionElegida) {
                 case SUMAR: {
-                    resultado = Calculadora.sumar(nro1, nro2);
+                    resultado = Calculadora.sumar(Arrays.asList(nro1, nro2));
                     break;
                 }
                 case RESTAR: {
-                    resultado = Calculadora.restar(nro1, nro2);
+                    resultado = Calculadora.restar(Arrays.asList(nro1, nro2));
                     break;
                 }
                 case MULTIPLICAR: {
