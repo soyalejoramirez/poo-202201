@@ -5,6 +5,15 @@ public class Bicicleta extends Vehiculo {
     private int nroPlatos;
     private double cadencia;
 
+    public Bicicleta(String marca, String modelo) {
+        super(marca, modelo);
+    }
+
+    @Override
+    public void acelerar(int incremento) {
+        System.out.println("Acelerando como una BICI!");
+    }
+
     public int getNroPinones() {
         return nroPinones;
     }
