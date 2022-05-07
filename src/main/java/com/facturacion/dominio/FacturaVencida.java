@@ -11,13 +11,13 @@ public class FacturaVencida extends Factura {
 
     @Override
     public long calcularTotal() {
-        return 0;
+        return this.getValor() + (VLR_DIA_VENCIDO * getDiasVencidos());
     }
 
     public int getDiasVencidos() {
         LocalDate fechaActual = LocalDate.now();
         int diasVencimiento = 0;
         // TODO, pendiente por desarrollar para el reto
-        return VLR_DIA_VENCIDO * diasVencimiento;
+        return diasVencimiento;
     }
 }
